@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
 
-    <title>Coding Warmer - E1 </title>
-</head>
-<body>
-    
-   
-        <h1>Purchase Receipt</h1>
-        
-       
-        <section>
-            <div> 
-             <div>
-                 <ion-label>Article:</ion-label>
-             </div>
-               <div>
-                  <input placeholder="Example: Apples" id="description"/>
-               </div>
-            </div>
+    <title>Coding Warmer - E1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Receipt</h1>
 
-            <div>
-                <div>
-                    <ion-label>Amount:</ion-label>
-                </div>
-                <div>
-                    <ion-input placeholder="Example: $3" id="amount"></ion-input>
-                </div>
-            </div>
+      <section>
+        <div class="row">
+          <ion-label class="text">Article</ion-label>
+          <input placeholder="Example: Apples" id="description" class="input" />
+        </div>
 
-            <div>
-                <div>
-                    <button>Calculate Total</button>
-                </div>
-            </div>
+        <div class="row">
+          <ion-label class="text">Amount</ion-label>
+          <input
+            type="number"
+            placeholder="Example: $3"
+            id="amount"
+            class="input"
+          />
+        </div>
 
-            <div>
-                <div>
-                    <ul id="ticket">
-                        <!--List of ticket articles here-->
-                    </ul>
-                </div>
-            </div>
-            <p id="total">
-                Total: <!--Total here-->
-            </p>
-        </section>
-    
-</body>
-<script src="index.js"></script>
+        <div>
+          <div>
+            <button class="button">Calculate Total</button>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <ul class="text" id="ticket">
+              <!--List of ticket articles here-->
+            </ul>
+          </div>
+        </div>
+        <p class="textTotal" id="total">
+          Total:
+          <!--Total here-->
+        </p>
+      </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
 </html>
